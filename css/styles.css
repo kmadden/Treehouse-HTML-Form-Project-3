@@ -1,0 +1,222 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 1.5em;
+}
+
+body {
+  font-family: 'Bungee', regular;
+  color: #384047;
+  background-color: #fff;
+
+}
+.main-nav {
+  width: 100%;
+  background: #0399ff;
+  height: 70px;
+  text-align: center;
+  z-index: 2;
+  top:0;
+  left:0;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+}
+
+.main-nav h1{
+  color:#fff;
+}
+
+form {
+  width: 100%;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.singleLine{
+  margin: 10px 0 5px; 
+  height: 2px;
+  border-bottom: 2px solid #2d3945;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 768px;
+}
+
+.doubeLine{
+    height: 9px;
+    border-top: 4px solid #2d3945;
+    border-bottom: 2px solid #2d3945;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 768px;
+}
+
+.copyright p{
+  font-size: .8em;
+  font-style:italic;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  display: block;
+}
+
+input#name:focus,
+input#email:focus,
+input#phoneNumber:focus,
+input#streetAddress:focus,
+input#city:focus,
+select#state:focus,
+input#zipcode:focus{
+  transition: background-color 1s ease;
+  background-color: #a1d7fc;
+  border: 2px solid #0399ff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+input#zipcode{
+  width: 50%;
+}
+
+textarea#comment{
+  height:120px;
+}
+
+input#name,
+input#email {
+  text-align:right;
+  font-style: italic;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #0399ff;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #0399ff;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+  max-width: 792px;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  padding-top: 45px;
+}
+
+label {
+  display: block;
+ margin: 30px auto;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+form p{
+  text-align: center;
+}
+
+#newsletter{
+  width: 100%;
+  margin-right: 4em;
+}
+
+/* Tablet/Desktop Breakpot */
+@media screen and (min-width: 768px) {
+
+form {
+    max-width: 792px;
+  }
+
+label {
+  display: inline-block;
+  margin: 30px auto;
+  width: 180px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  width: 570px;
+  display: inline-block;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  display:inline;
+  }
+
+label.light{
+  display:inline;
+}
+
+#newsletter label{
+width:100%;
+}
+
+textarea#comment {
+    width:728px;
+    height: 200px;
+}
+
+button {
+  width:728px;
+  margin-left: 1em;
+}
